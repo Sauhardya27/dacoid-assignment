@@ -215,7 +215,6 @@ const Calendar: React.FC = () => {
 		const firstDay = getFirstDayOfMonth(currentDate);
 		const days = [];
 
-		// Empty cells for previous month
 		for (let i = 0; i < firstDay; i++) {
 			days.push(
 				<div
@@ -228,7 +227,6 @@ const Calendar: React.FC = () => {
 			);
 		}
 
-		// Calendar days
 		for (let day = 1; day <= daysInMonth; day++) {
 			const date = new Date(currentDate.getFullYear(), currentDate.getMonth(), day);
 			const dateKey = date.toISOString().split('T')[0];
@@ -289,7 +287,7 @@ const Calendar: React.FC = () => {
 								style={{
 									backgroundColor: `${event.color}${darkMode ? '30' : '15'}`,
 									color: darkMode
-										? `${event.color}EE`  // More opaque in dark mode
+										? `${event.color}EE`
 										: event.color
 								}}
 								onClick={(e) => {
@@ -318,7 +316,6 @@ const Calendar: React.FC = () => {
 				</div>
 			);
 		}
-
 		return days;
 	};
 
@@ -330,7 +327,6 @@ const Calendar: React.FC = () => {
 				: 'bg-white/80 shadow-gray-200/50 backdrop-blur-sm'
 				}`}>
 
-				{/* Enhanced Header Section */}
 				<div className="mb-8 space-y-6">
 					<div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
 						<div className="flex items-center gap-6">
@@ -423,7 +419,6 @@ const Calendar: React.FC = () => {
 					</div>
 				</div>
 
-				{/* Enhanced Calendar Grid */}
 				<div className={`rounded-xl overflow-hidden border shadow-sm transition-colors ${darkMode ? 'border-gray-700' : 'border-gray-200'
 					}`}>
 					<div className={`grid grid-cols-7 ${darkMode
@@ -447,7 +442,6 @@ const Calendar: React.FC = () => {
 					</div>
 				</div>
 
-				{/* Enhanced Modal */}
 				<Dialog open={showEventModal} onOpenChange={setShowEventModal}>
 					<DialogContent className={`sm:max-w-md ${darkMode ? 'bg-gray-800 text-white' : 'bg-white'}`}>
 						<DialogHeader>

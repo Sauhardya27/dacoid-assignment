@@ -1,13 +1,12 @@
-# Modern React Calendar App
-
-A feature-rich calendar application built with React, TypeScript, and Tailwind CSS. This modern calendar solution offers a clean, intuitive interface for managing events and appointments with both light and dark mode support.
+# Modern Next.js Calendar App
+A feature-rich calendar application built with Next.js, React, TypeScript, and Tailwind CSS. This modern calendar solution offers a clean, intuitive interface for managing events and appointments with both light and dark mode support.
 
 ## 🌟 Features
 
 ### Core Functionality
 - Create, edit, and delete events with customizable:
   - Title and description
-  - Start and time times
+  - Start and end times
   - Color coding
 - Monthly view navigation
 - Real-time event search
@@ -15,6 +14,7 @@ A feature-rich calendar application built with React, TypeScript, and Tailwind C
 - Export events as JSON
 
 ### User Interface
+- Server-side rendering with Next.js
 - Responsive design for all screen sizes
 - Smooth animations and transitions
 - Intuitive event management
@@ -41,7 +41,6 @@ A feature-rich calendar application built with React, TypeScript, and Tailwind C
 - npm or yarn package manager
 
 ### Installation
-
 1. Clone the repository
 ```bash
 git clone https://github.com/Sauhardya27/dacoid-assignment.git
@@ -73,24 +72,20 @@ yarn dev
 5. Open your browser and navigate to `http://localhost:3000`
 
 ## 🛠️ Built With
-
-- [React](https://reactjs.org/) - Frontend framework
-- [Next.js](https://nextjs.org/) - React framework for server-side rendering and static site generation
+- [Next.js](https://nextjs.org/) - React framework for production
+- [React](https://reactjs.org/) - Frontend library
 - [TypeScript](https://www.typescriptlang.org/) - Programming language
 - [Tailwind CSS](https://tailwindcss.com/) - CSS framework
 - [shadcn/ui](https://ui.shadcn.com/) - UI component library
 - [Lucide Icons](https://lucide.dev/) - Icon library
 
-## 📱 Live Demo
-
-Check out the live demo: [Calendar App Demo](https://dacoid-assignment-steel.vercel.app/)
+## 📱 Deployment
+The app is deployed on Vercel, the platform built by the creators of Next.js. Check out the live demo: [Calendar App Demo](https://dacoid-assignment-steel.vercel.app/)
 
 ## 📄 License
-
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## 🤝 Contributing
-
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
@@ -98,7 +93,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 5. Open a Pull Request
 
 ## 🔄 Roadmap
-
 - [ ] Week view
 - [ ] Year view
 - [ ] Recurring events
